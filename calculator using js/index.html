@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator  using js</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text-zone">
+            <input type="text" id="input" name="input">
+        </div>    
+            <div class="buttons">
+               <button type="button" class="btn dif" onclick=" getOperator('*')">*</button>
+               <button type="button" class="btn dif"  onclick=" getOperator('/')">/</button>
+               <button type="button" class="btn dif"  onclick=" getOperator('-')">-</button>
+               <button type="button" class="btn dif"  onclick=" getOperator('+')">+</button>
+
+               <button type="button" class="btn" onclick=" getNumber(9)">9</button>
+               <button type="button" class="btn" onclick=" getNumber(8)">8</button>
+               <button type="button" class="btn" onclick=" getNumber(7)">7</button>
+               <button type="button" class="btn" onclick=" getNumber(6)">6</button>
+               <button type="button" class="btn" onclick=" getNumber(5)">5</button>
+               <button type="button" class="btn" onclick=" getNumber(4)">4</button>
+               <button type="button" class="btn" onclick=" getNumber(3)">3</button>
+               <button type="button" class="btn" onclick=" getNumber(2)">2</button>
+               <button type="button" class="btn" onclick=" getNumber(1)">1</button>
+               <button type="button" class="btn" onclick=" getNumber(0)">0</button>
+               <button type="button" class="btn" onclick=" getNumber('.')">.</button>
+
+
+               <button type="button" class="btn dif btn-equal" onclick="calculate()">=</button>
+               <button type="button" class="btn dif btn-clear" onclick="clear()" > c</button>
+            </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
